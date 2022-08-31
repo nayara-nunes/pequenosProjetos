@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bege:#ddc9c9;
+  --brownRose:#A77979;
+  --brown-300:#704F4F;
+  --brown-400:#553939;
+  --brown-500:#472D2D;
+  --font: 'Red Hat Display', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+body{
+  background-color: var(--bege);
+  font-family: var(--font);
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.header{
+display: flex;
+justify-content: space-between;
+height: 100px;
+align-items: center;
+margin-bottom: 1.6rem;
+
+
+}
+.imgLogo{
+width: 80px;
+}
+.menuNav ul{
+  display: flex;
+}
+.menuNav ul li{
+  padding: 0.7rem;
+ 
+}
+
+.menuNav li a{
+  color: var(--brown-500);
+  font-size: 1.2rem;
+  
+}
+
+/*Seção 02*/
+.backgroundCoffe{
+  background-image: url('../imgs/painel.png');
+  background-position-x: right;
+  background-position-y: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.textoPrincipal{
+  margin-left:2.5rem;
+  color: var(--brown-500);
+  text-align: left;
+  width: 50%;
+  padding-top:8rem;
+ 
+}
+/* Fontes */
+
+.tituloPrincipal{
+text-align: center;
+font-size: 2rem;
+}
+.subtitulo{
+color: var(--brown-500);
+font-weight: 400;
+font-size: 1.2em;
+text-indent: 20px;
+line-height: 1.4;
+text-align: left;
+width: 90%;
+margin: 2.5rem;
+}
+.tituloSecundario{
+  font-size: 2.5rem;
+  color: var(--brown-400);
+  text-align: center;
+  margin: 2.5rem;
+}
+/*about*/
+.about{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about p{
+  color: var(--brown-500);
+  text-align: left;
+  text-indent: 20px;
+  width: 80%;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Adress*/
+
+.adress{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.adress img{
+  width: 180px;
+  
+}
+
+.adress span{
+  font-size: 1.2rem;
+  color: var(--brown-500);
+}
+
+/* Ladrilhos*/
+.ladrilhos{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+ 
+}
+.flexibilizaImgs{
+  display: flex;
+}
+.img1{ 
+  width: 50%;
+  height: 100%;
+}
+.img2{
+  width:50%;
+height: 300px;
+}
+.img3{
+  width:50%;
+height: 300px;
+}
+
+.img4{
+  width: 50%;
+  position: relative;
+height: 265px;
+  top: -265px;
+  left: 50%;
+}
+
+/*Contato*/
+.contact{
+  background-color: var(--brown-400);
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-bottom: 2rem;
+ 
+}
+.contact img{
+  width: 30%;
+  padding: 2rem;
+
+ 
+}
+.textoContato{
+  margin: 5rem;
+}
+.textoContato h2{
+  color: var(--brownRose);
+
+
+}
+
+.textoContato p,  .textoContato span{
+color:var(--bege);
+font-size: 1.4rem;
+line-height: 1.6;
+
+}
+#spanText{
+  color: #121212;
+  text-align: center;
+  margin: 20px ;
+}
+
+/*rodape*/
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../imgs/rodape.png);
+  background-position-x: center;
+  background-position-y: center;
+  align-items: center;
+  height: 180px;
+  color: var(--bege);
+  font-weight: 400;
+}
+
+.rodape ul li a{
+  color: var(--bege);
+}
+.rodape ul li:hover{
+  background: var(--brown-400);
+  transition: all 0.15s;
+}
+
+
+/*Responsive*/
+@media (max-width:1200px) {
+  .backgroundCoffe{
+    background-image: url('../imgs/painelMobile.png');
+   height: 80vh;
+  }
+  .textoPrincipal{
+    width: 80%;
+  }
+  .img1{ 
+    width: 50%;
+    height: 100%;
+  }
+  .img2{
+    width:25%;
+  height: 150px;
+  }
+  .img3{
+    width:25%;
+  height: 150px;
+  }
+  
+  .img4{
+    width: 50%;
+    position: relative;
+    height: 170px;
+    top: -170px;
+    left: 50%;
+  }
+  .ladrilhos{
+    margin: 40px 0;
+    height: 60vh;
+  }
+  .adress{
+    max-height: 80vh;
+  }
+  
+}
+@media(max-width:991.98px){
+
+}
+@media(max-width:768px){
+
+}
+
+
+
+@media(max-width:425px){
+.header{
+  flex-direction: column;
+  justify-content:start;
+height: 200px;
+  align-items:center;
+  margin-top: 1rem;
+
+}
+.menuNav ul  {
+  flex-direction: column;
+  margin: 0;
+
+}
+.menuNav ul li{
+  padding: 0.4rem;
+}
+.imgLogo{
+  width: 60px;
+}
+.backgroundCoffe{
+  background-image: url('../imgs/painelMobile.png');
+ height: 80vh;
+}
+.subtitulo{
+  width: 100%;
+  font-size: 1.1rem;
+  margin: auto;
+}
+.tituloPrincipal{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.textoPrincipal{
+  margin-left: 0;
+  margin-top: 0;
+  padding: 1.2rem;
+}
+.tituloSecundario{
+  font-size: 1.8em;
+}
+.about{
+  min-height: 120vh;
+}
+.about p{
+  line-height: 1.6;
+  font-size: 1rem;
+  width: 90%;
+}
+.about img{
+  width: 100px;
+  margin: 20px;
+}
+.adress{
+  min-height: 80vh;
+}
+.adress span{
+  font-size: 1rem;
+  text-align: center;
+}
+.contact img{
+  display: none;
+}
+.contact p, .contact span{
+  font-size: 1rem;
+}
+.ladrilhos{
+  display: none;
+}
+}
+
